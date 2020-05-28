@@ -1,0 +1,148 @@
+
+*,
+*::after,
+*::before{
+
+margin:0;
+padding:0;
+
+}
+
+html{
+
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin:0;
+  
+    
+
+}
+body{
+
+  
+        overflow: hidden; /* Hide scrollbars */
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        background-color: white;
+       
+
+
+}
+
+.navbar{
+display:flex;
+width:100vw;
+height:5vh; 
+min-height: 85px;
+background:cyan;
+justify-content: flex-end;
+
+
+
+
+
+
+}
+
+.test{
+    
+display:flex;
+justify-content: center;
+align-items: center;
+width:18.5vw;
+min-width:100px;
+height:100%;
+background-color: lime;
+
+
+
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display:flex;
+    display:none;
+    justify-content: center;
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: lightgrey;
+    
+
+}
+
+.dropdown:active > .dropdown-content{
+    display: flex;
+    display:block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: menu 1s forwards;
+
+}
+
+.dropdown:active > .dropdown-content >  .item{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    width:80%;
+    height:100%;
+    
+}
+
+.dropdown:active > .item:nth-child(2){
+
+    border:5px solid blue;
+
+
+}
+
+.dropdown:active > .dropdown-content{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: menu 1s forwards;
+    transform-origin: left;
+    
+    
+    
+   
+    
+
+}
+
+
+#Layer{
+
+    width:100px;
+    height: 40%;
+    
+}
+
+rect{
+    fill:black;
+}
+
+
+
+
+@keyframes menu{
+0%{height:95vh;
+    transform:translateX(200px);}
+100%{
+transform:translateX(-76.00%);
+width:100vw;
+height:90.1vh;
+
+
+}
+
+
+}
