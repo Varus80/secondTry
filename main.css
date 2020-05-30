@@ -73,6 +73,54 @@ background-color: lime;
     
 
 }
+
+#Layer{
+
+    width:100px;
+    height: 40%;
+    
+}
+
+rect{
+    fill:black;
+}
+
+
+
+
+@keyframes menu{
+0%{height:90vh;
+    width:0vw;
+    transform:translateX(200px);}
+100%{
+transform:translateX(-76.00%);
+width:100vw;
+height:90vh;
+
+
+}}
+
+@keyframes menuback{
+ 0%{
+    transform:translateX(-76.00%);
+    width:100vw;
+    height:90vh;
+
+ }
+
+ 90%{
+     width:0vw;
+ }
+
+    100%{
+        height:90vh;
+    width:0vw;
+    transform:translateX(100px);
+    display: none;
+    }
+
+    
+}
 /*
 .dropdown:active > .dropdown-content{
     display: flex;
@@ -119,33 +167,3 @@ background-color: lime;
 }
 */
 
-#Layer{
-
-    width:100px;
-    height: 40%;
-    
-}
-
-rect{
-    fill:black;
-}
-
-
-
-
-@keyframes menu{
-0%{height:90vh;
-    transform:translateX(200px);}
-100%{
-transform:translateX(-76.00%);
-width:100vw;
-height:90vh;
-
-
-}
-
-
-}
-
-
-}
