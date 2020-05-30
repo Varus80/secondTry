@@ -10,6 +10,7 @@ if(m == 0){
 
 
 a.style.display = "block";
+a.style.dusplay = "flex";
 a.style.flexDirection = "column";
 a.style.alignItems = "center";
 a.style.animation = "menu 1s forwards";
@@ -29,7 +30,12 @@ b[i].style.border = "5px solid blue";
 }
 }
 else{
-    a.style.display = "none";
+    a.style.animation = "menuback 1s forwards";
+    a.style.transformOrigin = "right";
+
+    for(i;i<b.length;i++){
+        b[i].style.display = "none";
+    }
 }
 
 if(m == 0){
@@ -43,3 +49,4 @@ console.log(m);
 
             
 });
+
